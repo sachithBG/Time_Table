@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="694.0" prefWidth="936.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="lk.camp.time_table.viewController.TimeTblCorrectFormatController">
+    <stylesheets>
+        <URL value="@/lk/camp/time_table/css/timetblcorrectformat.css" />
+    </stylesheets>
+   <children>
+      <TabPane fx:id="altbls" layoutX="19.0" layoutY="410.0" prefHeight="283.0" prefWidth="898.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="Tab1" text="1st Year">
+               <content>
+                  <TableView fx:id="tbl1" editable="true" prefHeight="200.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn prefWidth="74.40002059936523" text="No:" />
+                        <TableColumn prefWidth="146.39996337890625" text="Time" />
+                        <TableColumn prefWidth="75.0" text="Monday" />
+                        <TableColumn prefWidth="75.0" text="Tuesday" />
+                        <TableColumn prefWidth="75.0" text="Wednesday" />
+                        <TableColumn prefWidth="75.0" text="Thuresday" />
+                        <TableColumn prefWidth="75.0" text="Friday" />
+                        <TableColumn prefWidth="75.0" text="Saturday" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TableView>
+               </content>
+            </Tab>
+            <Tab fx:id="Tab2" text="2nd Year">
+               <content>
+                  <TableView fx:id="tbl2" editable="true" prefHeight="200.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn prefWidth="74.40002059936523" text="No:" />
+                        <TableColumn prefWidth="146.39996337890625" text="Time" />
+                        <TableColumn prefWidth="75.0" text="Monday" />
+                        <TableColumn prefWidth="75.0" text="Tuesday" />
+                        <TableColumn prefWidth="75.0" text="Wednesday" />
+                        <TableColumn prefWidth="75.0" text="Thuresday" />
+                        <TableColumn prefWidth="75.0" text="Friday" />
+                        <TableColumn prefWidth="75.0" text="Saturday" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TableView>
+               </content>
+            </Tab>
+            <Tab fx:id="Tab3" text="3rd Year">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbl3" editable="true" prefHeight="223.0" prefWidth="898.0">
+                           <columns>
+                              <TableColumn prefWidth="74.40002059936523" text="No:" />
+                              <TableColumn prefWidth="146.39996337890625" text="Time" />
+                              <TableColumn prefWidth="75.0" text="Monday" />
+                              <TableColumn prefWidth="75.0" text="Tuesday" />
+                              <TableColumn prefWidth="75.0" text="Wednesday" />
+                              <TableColumn prefWidth="75.0" text="Thuresday" />
+                              <TableColumn prefWidth="75.0" text="Friday" />
+                              <TableColumn prefWidth="75.0" text="Saturday" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="Tab4" text="4rt Year">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="210.0" prefWidth="882.0">
+                     <children>
+                        <TableView fx:id="tbl4" editable="true" prefHeight="222.0" prefWidth="898.0">
+                           <columns>
+                              <TableColumn prefWidth="74.40002059936523" text="No:" />
+                              <TableColumn prefWidth="146.39996337890625" text="Time" />
+                              <TableColumn prefWidth="75.0" text="Monday" />
+                              <TableColumn prefWidth="75.0" text="Tuesday" />
+                              <TableColumn prefWidth="75.0" text="Wednesday" />
+                              <TableColumn prefWidth="75.0" text="Thuresday" />
+                              <TableColumn prefWidth="75.0" text="Friday" />
+                              <TableColumn prefWidth="75.0" text="Saturday" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TabPane>
+   </children>
+</AnchorPane>

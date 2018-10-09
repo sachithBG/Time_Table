@@ -1,0 +1,22 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+
+}
+.acolumn-header{
+    -fx-background-color: transparent;
+}
+
+/*.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color,  honeydew;
+    -fx-text-fill: red;
+    -fx-background-insets: 1, 1 1 0 1;
+    -fx-padding: 0.0em;  0   
+}*/
+.table-view .column-header-background .label{
+    -fx-background-color: blue;
+    -fx-text-fill: black;
+}

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="592.0" prefWidth="749.0" style="-fx-background-color: #1e0361;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.camp.time_table.viewController.LectureManageController">
+    <stylesheets>
+        <URL value="@/lk/camp/time_table/css/lecturemanage.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="txtName" focusColor="#cc0000" labelFloat="true" layoutX="64.0" layoutY="150.0" prefHeight="26.0" prefWidth="276.0" promptText="Name" unFocusColor="#d4e8f5" />
+      <JFXTextField fx:id="txtSCode" focusColor="#cc0000" labelFloat="true" layoutX="64.0" layoutY="225.0" prefHeight="35.0" prefWidth="161.0" promptText="Subject Code" unFocusColor="#d4e8f5" />
+      <JFXTextField fx:id="txtDepartment" focusColor="#cc0000" labelFloat="true" layoutX="419.0" layoutY="150.0" prefHeight="26.0" prefWidth="286.0" promptText="Department" unFocusColor="#d4e8f5" />
+      <Label fx:id="lblTitle" layoutX="231.0" layoutY="32.0" prefHeight="38.0" prefWidth="286.0" text="Lecture Details Manage" underline="true">
+         <font>
+            <Font size="26.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#40ff00" />
+                  <Stop color="#a45454" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <JFXTextField fx:id="txtSName" focusColor="#cc0000" labelFloat="true" layoutX="284.0" layoutY="230.0" prefHeight="26.0" prefWidth="425.0" promptText="Subject Name" unFocusColor="WHITE" />
+      <JFXButton fx:id="btnAdd" layoutX="64.0" layoutY="303.0" onAction="#btnAddAction" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: #1ad701;" text="+ Add">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="187.0" layoutY="303.0" onAction="#btnUpdateAction" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: #1ad701;" text="Update">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" layoutX="317.0" layoutY="303.0" onAction="#btnClearAction" prefHeight="39.0" prefWidth="88.0" style="-fx-background-color: #1ad701;" text="Clear">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="617.0" layoutY="303.0" onAction="#btnDeleteAction" prefHeight="39.0" prefWidth="88.0" ripplerFill="#0547ff" style="-fx-background-color: #1ad701;" text="Delete">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <TableView fx:id="tblLecture" layoutX="60.0" layoutY="365.0" prefHeight="200.0" prefWidth="650.0" style="-fx-background-color: #b9adff;" styleClass="tableview">
+        <columns>
+          <TableColumn prefWidth="33.5999755859375" text="ID" visible="false" />
+          <TableColumn prefWidth="152.79999542236328" text="Name" />
+            <TableColumn prefWidth="187.20001220703125" text="Department" />
+            <TableColumn prefWidth="100.0" text="Code" />
+            <TableColumn prefWidth="213.60006713867188" text="Subject" />
+            <TableColumn minWidth="0.0" prefWidth="0.0" text="Column X" />
+            <TableColumn prefWidth="75.0" text="Column X" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnBack" layoutX="60.0" layoutY="41.0" onAction="#btnBackAction" prefHeight="35.0" prefWidth="102.0" style="-fx-background-color: #ac0000;" text="&lt;&lt;Back" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblId" layoutX="64.0" layoutY="108.0" prefHeight="26.0" prefWidth="28.0" textFill="WHITE">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

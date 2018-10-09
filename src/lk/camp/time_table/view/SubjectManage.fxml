@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dcdcdc;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.1" fx:controller="lk.camp.time_table.viewController.SubjectManageController">
+    <stylesheets>
+        <URL value="@/lk/camp/time_table/css/subjectmanage.css" />
+    </stylesheets>
+   <children>
+      <JFXTextField fx:id="txtScode" labelFloat="true" layoutX="57.0" layoutY="129.0" promptText="Subject Code">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSName" labelFloat="true" layoutX="246.0" layoutY="128.0" prefHeight="26.0" prefWidth="296.0" promptText="Subject Name">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXButton fx:id="btnAdd" layoutX="54.0" layoutY="173.0" onAction="#btnAdd" prefHeight="34.0" prefWidth="86.0" ripplerFill="#5353b9" style="-fx-background-color: #5353b9;" text="+Add">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" layoutX="166.0" layoutY="173.0" onAction="#btnClear" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: #5353b9;" text="Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="348.0" layoutY="173.0" onAction="#btnUpdate" prefHeight="34.0" prefWidth="86.0" style="-fx-background-color: #5353b9;" text="Update">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="456.0" layoutY="173.0" onAction="#btnDelete" prefHeight="34.0" prefWidth="86.0" ripplerFill="#751635" style="-fx-background-color: #751635;" text="Remove" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <TableView fx:id="tblSubject" layoutX="54.0" layoutY="225.0" prefHeight="149.0" prefWidth="491.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="tblColmn" prefWidth="132.800048828125" text="Subject Code" />
+            <TableColumn prefWidth="282.39996337890625" text="Subject Name" />
+        </columns>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TableView>
+      <JFXButton fx:id="btnExite" layoutX="513.0" layoutY="21.0" onAction="#exiteAc" prefHeight="38.0" prefWidth="63.0" ripplerFill="#dadaf2" style="-fx-background-color: #c70000;" text="Exite">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Label layoutX="54.0" layoutY="40.0" prefHeight="26.0" prefWidth="216.0" text="Subject Manage">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#2600fa" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="comSearch" editable="true" labelFloat="true" layoutX="315.0" layoutY="79.0" onAction="#comSearchA" prefHeight="28.0" prefWidth="226.0" promptText="Search Subject Code">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <Label fx:id="lblID" layoutX="87.0" layoutY="77.0" prefHeight="26.0" prefWidth="63.0" />
+      <Label layoutX="57.0" layoutY="77.0" prefHeight="26.0" prefWidth="30.0" text="ID: " />
+   </children>
+</AnchorPane>

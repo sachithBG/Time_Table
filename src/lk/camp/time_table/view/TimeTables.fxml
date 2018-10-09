@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDrawersStack?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseMoved="#AnchorPln" prefHeight="919.0" prefWidth="948.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.camp.time_table.viewController.TimeTablesController">
+    <stylesheets>
+        <URL value="@/lk/camp/time_table/css/TimeTables.css" />
+    </stylesheets>
+   <children>
+      <ImageView fx:id="allTbl" fitHeight="133.0" fitWidth="945.0" opacity="0.29" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/log.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="407.0" layoutY="25.0" prefHeight="39.0" prefWidth="131.0" text="Wellcome " textFill="#391592">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="24.0" layoutY="133.0" prefHeight="283.0" prefWidth="898.0" style="-fx-background-color: #ffffff;" text=" " textFill="#ffffff00" textOverrun="CENTER_ELLIPSIS">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="0.011450382589383912" startY="0.011450352559562858">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="BLACK" offset="0.032045383247934836" />
+                  <Stop color="#2500ff" offset="0.3260953675624805" />
+                  <Stop color="WHITE" offset="0.6977099236641221" />
+                  <Stop color="#0006ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="btnBack" layoutX="843.0" layoutY="25.0" onAction="#btnLogOutAction" prefHeight="32.0" prefWidth="77.0" ripplerFill="RED" style="-fx-background-color: #3b00ff;" text="Log Out">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnBack1" layoutX="747.0" layoutY="25.0" onAction="#btnBackAction" prefHeight="32.0" prefWidth="77.0" ripplerFill="RED" style="-fx-background-color: #3b00ff;" text="&lt;&lt;Back">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <TitledPane layoutX="24.0" layoutY="781.0" text="Sujesion :" textFill="#000982">
+         <content>
+            <JFXTextArea labelFloat="true" prefHeight="55.0" prefWidth="898.0" />
+         </content>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TitledPane>
+      <JFXDrawersStack layoutX="110.0" layoutY="214.0" prefWidth="251.0" />
+      <TabPane fx:id="altbls" layoutX="23.0" layoutY="424.0" prefHeight="283.0" prefWidth="898.0" tabClosingPolicy="UNAVAILABLE">
+         <tabs>
+            <Tab fx:id="Tab1" text="1st Year">
+               <content>
+                  <TableView fx:id="tbl1" editable="true" prefHeight="200.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn prefWidth="74.40002059936523" text="No:" />
+                        <TableColumn prefWidth="146.39996337890625" text="Time" />
+                        <TableColumn prefWidth="75.0" text="Monday" />
+                        <TableColumn prefWidth="75.0" text="Tuesday" />
+                        <TableColumn prefWidth="75.0" text="Wednesday" />
+                        <TableColumn prefWidth="75.0" text="Thuresday" />
+                        <TableColumn prefWidth="75.0" text="Friday" />
+                        <TableColumn prefWidth="75.0" text="Saturday" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TableView>
+               </content>
+            </Tab>
+            <Tab fx:id="Tab2" text="2nd Year">
+               <content>
+                  <TableView fx:id="tbl2" editable="true" prefHeight="200.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn prefWidth="74.40002059936523" text="No:" />
+                        <TableColumn prefWidth="146.39996337890625" text="Time" />
+                        <TableColumn prefWidth="75.0" text="Monday" />
+                        <TableColumn prefWidth="75.0" text="Tuesday" />
+                        <TableColumn prefWidth="75.0" text="Wednesday" />
+                        <TableColumn prefWidth="75.0" text="Thuresday" />
+                        <TableColumn prefWidth="75.0" text="Friday" />
+                        <TableColumn prefWidth="75.0" text="Saturday" />
+                     </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TableView>
+               </content>
+            </Tab>
+            <Tab fx:id="Tab3" text="3rd Year">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tbl3" editable="true" prefHeight="223.0" prefWidth="898.0">
+                           <columns>
+                              <TableColumn prefWidth="74.40002059936523" text="No:" />
+                              <TableColumn prefWidth="146.39996337890625" text="Time" />
+                              <TableColumn prefWidth="75.0" text="Monday" />
+                              <TableColumn prefWidth="75.0" text="Tuesday" />
+                              <TableColumn prefWidth="75.0" text="Wednesday" />
+                              <TableColumn prefWidth="75.0" text="Thuresday" />
+                              <TableColumn prefWidth="75.0" text="Friday" />
+                              <TableColumn prefWidth="75.0" text="Saturday" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab fx:id="Tab4" text="4rt Year">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="210.0" prefWidth="882.0">
+                     <children>
+                        <TableView fx:id="tbl4" editable="true" prefHeight="222.0" prefWidth="898.0">
+                           <columns>
+                              <TableColumn prefWidth="74.40002059936523" text="No:" />
+                              <TableColumn prefWidth="146.39996337890625" text="Time" />
+                              <TableColumn prefWidth="75.0" text="Monday" />
+                              <TableColumn prefWidth="75.0" text="Tuesday" />
+                              <TableColumn prefWidth="75.0" text="Wednesday" />
+                              <TableColumn prefWidth="75.0" text="Thuresday" />
+                              <TableColumn prefWidth="75.0" text="Friday" />
+                              <TableColumn prefWidth="75.0" text="Saturday" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </TabPane>
+      <JFXComboBox fx:id="comCode" labelFloat="true" layoutX="703.0" layoutY="225.0" onAction="#comCodeA" prefHeight="30.0" prefWidth="190.0" promptText="Subject Code">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXComboBox>
+      <JFXButton fx:id="btnAdd" layoutX="33.0" layoutY="365.0" onAction="#btnAddA" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: #6189ff;" text=" + ADD">
+         <ripplerFill>
+            <LinearGradient cycleMethod="REPEAT" endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#94ff57" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="248.0" layoutY="365.0" onAction="#btnUpdateA" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: #6189ff;" text="Update">
+         <ripplerFill>
+            <RadialGradient centerX="0.49555558098687064" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#ff000000" />
+                  <Stop color="#ff000000" offset="0.11162292167729786" />
+                  <Stop color="#52ff00" offset="0.3801369863013699" />
+                  <Stop color="#0006ff" offset="0.766412213740458" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" layoutX="457.0" layoutY="365.0" onAction="#btnClearA" prefHeight="32.0" prefWidth="91.0" style="-fx-background-color: #6189ff;" text="Clear">
+         <ripplerFill>
+            <RadialGradient centerX="0.49555558098687064" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#ff000000" />
+                  <Stop color="#ff000000" offset="0.11162292167729786" />
+                  <Stop color="#52ff00" offset="0.3801369863013699" />
+                  <Stop color="#0006ff" offset="0.766412213740458" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnRefresh" layoutX="451.0" layoutY="733.0" onAction="#btnRefreshA" prefHeight="32.0" prefWidth="102.0" style="-fx-background-color: #94ff57;" text="Refresh" textFill="#222326">
+         <ripplerFill>
+            <RadialGradient centerX="0.49555558098687064" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#ff000000" />
+                  <Stop color="#ff000000" offset="0.11162292167729786" />
+                  <Stop color="#52ff00" offset="0.3801369863013699" />
+                  <Stop color="#0006ff" offset="0.766412213740458" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="804.0" layoutY="365.0" onAction="#btnDeleteA" prefHeight="32.0" prefWidth="91.0" ripplerFill="BLACK" style="-fx-background-color: #6189ff;" text="Delete">
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSave" layoutX="24.0" layoutY="733.0" onAction="#btnSaveA" prefHeight="32.0" prefWidth="91.0" style="-fx-background-color: #94ff57;" text="Save" textFill="#222326">
+         <ripplerFill>
+            <RadialGradient centerX="0.49555558098687064" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#ff000000" />
+                  <Stop color="#ff000000" offset="0.11162292167729786" />
+                  <Stop color="#52ff00" offset="0.3801369863013699" />
+                  <Stop color="#0006ff" offset="0.766412213740458" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnSend" layoutX="786.0" layoutY="873.0" onAction="#btnSendA" prefHeight="32.0" prefWidth="102.0" ripplerFill="#003df5" style="-fx-background-color: #a3baff;" text="Send &gt;&gt;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXTimePicker fx:id="TimePick1" defaultColor="#00068f" layoutX="465.0" layoutY="176.0" onAction="#TimePick1" promptText="From:">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXTimePicker>
+      <JFXComboBox fx:id="comDateName" labelFloat="true" layoutX="261.0" layoutY="176.0" onAction="#DateNameA" prefHeight="28.0" prefWidth="154.0" promptText="Date">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXTimePicker fx:id="TimePick2" defaultColor="#00018f" layoutX="708.0" layoutY="174.0" onAction="#TimePick2" promptText="To:" />
+      <JFXComboBox fx:id="comSemester" labelFloat="true" layoutX="33.0" layoutY="226.0" onAction="#comsemesterA" onMouseClicked="#SemesterClickEvent" prefHeight="28.0" prefWidth="178.0" promptText="Semester" />
+      <JFXButton fx:id="RowDelete" layoutX="777.0" layoutY="733.0" onAction="#rowDeleteA" prefHeight="32.0" prefWidth="111.0" ripplerFill="#e20404" style="-fx-background-color: #79a918;" text="Row Delete" />
+      <JFXComboBox fx:id="comOrderNo" labelFloat="true" layoutX="32.0" layoutY="176.0" onAction="#OrderNoA" prefHeight="30.0" prefWidth="111.0" promptText="Order No:" />
+      <JFXComboBox fx:id="comDepaName" labelFloat="true" layoutX="261.0" layoutY="228.0" onAction="#comDepaNameA" prefHeight="28.0" prefWidth="396.0" promptText="Department" />
+      <JFXButton fx:id="btnOrdMin" alignment="TOP_CENTER" layoutX="184.0" layoutY="175.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="26.0" onAction="#btnOrdMinActoin" prefHeight="26.0" prefWidth="26.0" style="-fx-background-color: #d3d1df;" styleClass="min" text="-" textFill="#08060600">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0018f0" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="185.0" layoutY="175.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/subtract.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnOrdAdd" alignment="TOP_LEFT" layoutX="157.0" layoutY="175.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#btnOrdAddActoin" prefHeight="26.0" prefWidth="54.0" style="-fx-background-color: #d3d1df;" styleClass="min" text="+">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0018f0" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <font>
+            <Font size="36.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="157.0" layoutY="175.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/add_.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblDate1" layoutX="23.0" layoutY="98.0" prefHeight="26.0" prefWidth="282.0" text=" " wrapText="true">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0018f0" />
+                  <Stop color="#28189f" offset="0.3212851615601798" />
+                  <Stop color="BLACK" offset="0.7014796611941859" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime1" layoutX="645.0" layoutY="98.0" prefHeight="26.0" prefWidth="282.0" text=" " wrapText="true">
+         <textFill>
+            <LinearGradient endX="1.0" endY="0.9045801481217828">
+               <stops>
+                  <Stop color="#0018f0" />
+                  <Stop color="#28189f" offset="0.3212851615601798" />
+                  <Stop color="#050306" offset="0.7014796611941859" />
+                  <Stop color="#210808" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="comLectureHall" labelFloat="true" layoutX="703.0" layoutY="295.0" prefHeight="39.0" prefWidth="190.0" promptText="Lecture Hall">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXTextField fx:id="txtSubName" labelFloat="true" layoutX="34.0" layoutY="300.0" prefHeight="30.0" prefWidth="251.0" promptText="Subject Name" />
+      <JFXTextField fx:id="txtLecName" labelFloat="true" layoutX="346.0" layoutY="299.0" prefHeight="32.0" prefWidth="311.0" promptText="Lecture Name" />
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #434343;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.camp.time_table.viewController.DashBoardAdminController">
+    <stylesheets>
+        <URL value="@/lk/camp/time_table/css/dashboardadmin.css" />
+    </stylesheets>
+   <children>
+      <JFXButton layoutX="43.0" layoutY="101.0" prefHeight="256.0" prefWidth="518.0" text=" ">
+         <ripplerFill>
+            <RadialGradient centerX="0.49555549621582035" centerY="0.5" focusAngle="7.24" radius="0.5186916155235788">
+               <stops>
+                  <Stop color="#ff4b4b" />
+                  <Stop color="#3007e8" offset="0.47602739726027393" />
+                  <Stop color="#aaafff" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <Label fx:id="lblManage" layoutX="51.0" layoutY="78.0" prefHeight="31.0" prefWidth="518.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <textFill>
+            <LinearGradient cycleMethod="REPEAT" endX="0.6145037449043216" endY="0.0916030388752013" startX="1.0" startY="0.648854975936977">
+               <stops>
+                  <Stop color="#322fff" />
+                  <Stop color="#322fff" offset="0.14351145038167937" />
+                  <Stop color="#ff0f0f" offset="0.3450381679389313" />
+                  <Stop color="#5aff55" offset="0.7341890620098294" />
+                  <Stop color="#2f28fa" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="lblWelcome" layoutX="155.0" layoutY="24.0" prefHeight="34.0" prefWidth="294.0" text="Welcome to Admin Controller" wrapText="true">
+         <font>
+            <Font size="21.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.491111077202691" centerY="0.5" focusAngle="94.47" focusDistance="0.13084117497239167" radius="0.6682243168911086">
+               <stops>
+                  <Stop color="#0c07e8" />
+                  <Stop color="#c1c4ff" offset="0.7773972602739725" />
+                  <Stop color="#8f1e1e" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <JFXButton layoutX="33.0" layoutY="6.0" prefHeight="94.0" prefWidth="534.0" text=" ">
+         <ripplerFill>
+            <LinearGradient endX="0.6374045228230134" endY="0.20610685566909442" startX="1.0" startY="0.7366412245590268">
+               <stops>
+                  <Stop color="#ff0f0f" />
+                  <Stop color="#ff0f0f" offset="0.007633587786259542" />
+                  <Stop color="#5aff55" offset="0.508234863536547" />
+                  <Stop color="#bcbaed" offset="0.7038167938931297" />
+                  <Stop color="#4f1aff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="btnUser" layoutX="84.0" layoutY="126.0" onAction="#btnUser" onMouseEntered="#UserManageEnter" onMouseExited="#UserManageExite" prefHeight="83.0" prefWidth="98.0" style="-fx-background-color: #080069;" text=" " textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <ripplerFill>
+            <LinearGradient endX="0.44274805611326495" endY="0.25190841150647814" startX="1.0" startY="0.7557251940246756">
+               <stops>
+                  <Stop color="#ff0f0f" />
+                  <Stop color="#c3b9e2" offset="0.7280821917808218" />
+                  <Stop color="#1500ff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+      </JFXButton>
+      <ImageView fitHeight="90.0" fitWidth="76.0" layoutX="95.0" layoutY="126.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/user.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnLecManage" layoutX="241.0" layoutY="126.0" onAction="#btnLecture" onMouseEntered="#LectureManageEnter" onMouseExited="#LectureManageExite" prefHeight="83.0" prefWidth="98.0" style="-fx-background-color: #080069;" text=" ">
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#ff0f0f" />
+                  <Stop color="#551cff" offset="0.35" />
+                  <Stop color="#5aff55" offset="0.7280821917808218" />
+                  <Stop color="#968fed" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="btnStuManage" layoutX="405.0" layoutY="126.0" onAction="#btnStudent" onMouseEntered="#StudentManageEnter" onMouseExited="#StudentManageExite" prefHeight="83.0" prefWidth="98.0" style="-fx-background-color: #080069;" text=" ">
+         <ripplerFill>
+            <RadialGradient centerX="0.49555549621582035" centerY="0.5" focusAngle="7.24" radius="0.5186916155235788">
+               <stops>
+                  <Stop color="#ff2727" />
+                  <Stop color="#2c07e8" offset="0.3821865523371326" />
+                  <Stop color="#1ee807" offset="0.6561800690159991" />
+                  <Stop color="#bfc2fa" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="btnDepartment" layoutX="84.0" layoutY="236.0" onAction="#btnDepartment" onMouseEntered="#DepartmentManageEnter" onMouseExited="#DepartmentManageExite" prefHeight="83.0" prefWidth="98.0" style="-fx-background-color: #080069;" text=" ">
+         <ripplerFill>
+            <RadialGradient centerX="0.49555549621582035" centerY="0.5" focusAngle="7.24" radius="0.5186916155235788">
+               <stops>
+                  <Stop color="#ff2727" />
+                  <Stop color="#2c07e8" offset="0.3821865523371326" />
+                  <Stop color="#1ee807" offset="0.6561800690159991" />
+                  <Stop color="#bfc2fa" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="btnTimeTbl" layoutX="241.0" layoutY="236.0" onAction="#btnTimeTbl" onMouseEntered="#TimeTblManageEnter" onMouseExited="#TimeTblManageExite" prefHeight="83.0" prefWidth="98.0" style="-fx-background-color: #080069;" text=" ">
+         <ripplerFill>
+            <RadialGradient centerX="0.49555549621582035" centerY="0.5" focusAngle="7.24" radius="0.5186916155235788">
+               <stops>
+                  <Stop color="#ff2727" />
+                  <Stop color="#2c07e8" offset="0.3821865523371326" />
+                  <Stop color="#1ee807" offset="0.6561800690159991" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="btnLectureHall" layoutX="405.0" layoutY="236.0" onAction="#LectureHall" onMouseEntered="#LectureHallEnter" onMouseExited="#LectureHallExit" prefHeight="83.0" prefWidth="98.0" style="-fx-background-color: #080069;" text=" ">
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f85b5b" />
+                  <Stop color="#f85b5b" offset="0.007633587786259542" />
+                  <Stop color="#44c932" offset="0.332536860817735" />
+                  <Stop color="#c93232" offset="0.6174056258496288" />
+                  <Stop color="#3c32ca" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill></JFXButton>
+      <ImageView fitHeight="83.0" fitWidth="112.0" layoutX="249.0" layoutY="126.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/3.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="83.0" fitWidth="98.0" layoutX="413.0" layoutY="126.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/myhc_11285.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="76.0" fitWidth="76.0" layoutX="95.0" layoutY="240.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/2.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="76.0" layoutX="253.0" layoutY="240.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/4.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="btnBack" layoutX="474.0" layoutY="14.0" onAction="#btnBack" prefHeight="31.0" prefWidth="86.0" ripplerFill="#d4d2ff" style="-fx-background-color: #5e0b0b;" text="Log Out" textFill="#ffebeb">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="83.0" fitWidth="76.0" layoutX="417.0" layoutY="240.0" mouseTransparent="true" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Lecture_Hall.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

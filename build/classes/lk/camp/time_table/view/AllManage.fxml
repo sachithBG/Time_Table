@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="558.0" prefWidth="915.0" style="-fx-background-color: #9795c4;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.camp.time_table.viewController.AllManageController">
+    <stylesheets>
+        <URL value="@/lk/camp/time_table/css/allmanage.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="lblTitle" layoutX="149.0" layoutY="41.0" prefHeight="32.0" prefWidth="625.0">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2f00ff" />
+                  <Stop color="BLACK" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+         <font>
+            <Font size="30.0" />
+         </font></Label>
+      <JFXButton layoutX="14.0" layoutY="20.0" prefHeight="530.0" prefWidth="894.0" text=" " textFill="#827f91">
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+      </JFXButton>
+      <JFXButton fx:id="btnBack" layoutX="31.0" layoutY="32.0" onAction="#btnBack" prefHeight="34.0" prefWidth="82.0" style="-fx-background-color: #00ff35;" text="&lt;&lt;Back">
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#0f00ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <font>
+            <Font size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnLogOut" layoutX="796.0" layoutY="38.0" onAction="#btnLogOut" prefHeight="38.0" prefWidth="90.0" style="-fx-background-color: #8c0000;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <ripplerFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#0f00ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXTextField fx:id="txtID" labelFloat="true" layoutX="31.0" layoutY="107.0" prefHeight="32.0" prefWidth="207.0" promptText="ID">
+         <cursor>
+            <Cursor fx:constant="V_RESIZE" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnAdd" layoutX="375.0" layoutY="242.0" onAction="#btnAdd" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #eae5ff;" text="+Add">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0f00ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" layoutX="514.0" layoutY="242.0" onAction="#btnUpdate" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #eae5ff;" text="Update">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2f00ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnClear" layoutX="656.0" layoutY="242.0" onAction="#btnClear" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #eae5ff;" text="Clear">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2f00ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXButton fx:id="btnDelete" layoutX="800.0" layoutY="242.0" onAction="#btnDelete" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #eae5ff;" text="Delete">
+         <ripplerFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#2f00ff" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </ripplerFill>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <JFXTextField fx:id="txtNIC" labelFloat="true" layoutX="31.0" layoutY="171.0" prefHeight="26.0" prefWidth="207.0" promptText="NIC NO">
+         <cursor>
+            <Cursor fx:constant="V_RESIZE" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtDepartment" labelFloat="true" layoutX="634.0" layoutY="107.0" prefHeight="26.0" prefWidth="235.0" promptText="Deartment">
+         <cursor>
+            <Cursor fx:constant="N_RESIZE" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="300.0" layoutY="107.0" prefHeight="26.0" prefWidth="246.0" promptText="Name">
+         <cursor>
+            <Cursor fx:constant="V_RESIZE" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtScode" labelFloat="true" layoutX="300.0" layoutY="170.0" prefHeight="26.0" prefWidth="246.0" promptText="Subject Code">
+         <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtSubject" labelFloat="true" layoutX="634.0" layoutY="171.0" prefHeight="26.0" prefWidth="235.0" promptText="Subject">
+         <cursor>
+            <Cursor fx:constant="V_RESIZE" />
+         </cursor>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="Refresh" layoutX="677.0" layoutY="38.0" onAction="#Refresh" prefHeight="24.0" prefWidth="90.0" ripplerFill="#00ff2f" style="-fx-background-color: #d4cfff;" text="Refresh">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.2671755292943415" startY="0.645038153379018">
+               <stops>
+                  <Stop color="#2b00ff" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </JFXButton>
+      <TabPane fx:id="altbl" layoutX="30.0" layoutY="358.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="185.0" prefWidth="854.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab fx:id="tblPaneStudent" text="Student Details">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="151.0" prefWidth="854.0">
+                     <children>
+                        <TableView fx:id="tblStudent" layoutX="-1.0" layoutY="-1.0" prefHeight="156.0" prefWidth="854.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="ID" />
+                            <TableColumn prefWidth="295.19998931884766" text="Student Name" />
+                              <TableColumn fx:id="tblClomRegNo" prefWidth="143.19998168945312" text="Register No" />
+                              <TableColumn prefWidth="232.00006103515625" text="Department" />
+                              <TableColumn prefWidth="108.00006103515625" text="YearAndSemester" />
+                          </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab fx:id="tblPaneLectureDe" text="Subject Details">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tblLectureDetails" layoutX="1.0" layoutY="-1.0" prefHeight="170.0" prefWidth="854.0">
+                          <columns>
+                            <TableColumn prefWidth="83.99999809265137" text="ID" />
+                            <TableColumn fx:id="tblColmnName" minWidth="0.0" prefWidth="145.5999526977539" text="Lecture Name" />
+                              <TableColumn prefWidth="124.79998779296875" text="NIC No:" />
+                              <TableColumn prefWidth="198.39999389648438" text="Department" />
+                              <TableColumn prefWidth="100.0" text="Subject Code" />
+                              <TableColumn prefWidth="205.60002441406255" text="Subject Name" />
+                          </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab fx:id="tblPaneDepartment" text="Department Details">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tblDepartment" layoutY="-1.0" prefHeight="170.0" prefWidth="854.0">
+                          <columns>
+                            <TableColumn prefWidth="175.20001792907715" text="ID" />
+                            <TableColumn fx:id="tblColmnDepName" prefWidth="678.3999938964844" text="DepartmentName" />
+                          </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tblPaneLectureHallDetails" text="Lecture Hall Details">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tblLectureHall" prefHeight="158.0" prefWidth="854.0">
+                          <columns>
+                            <TableColumn prefWidth="121.60004234313965" text="ID" />
+                            <TableColumn fx:id="tblColmnLectHallName" prefWidth="731.9999694824219" text="Lecture Hall Name" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab fx:id="tblPaneAdminDetails" text="User Details">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="tblAll" prefHeight="156.0" prefWidth="854.0" styleClass="adminStyle">
+                          <columns>
+                            <TableColumn fx:id="tblColmnPasword" prefWidth="131.19998741149902" text="Password" />
+                            <TableColumn fx:id="tblColmnUserNic" prefWidth="155.19998168945312" text="NIC No:" />
+                              <TableColumn prefWidth="382.3999938964844" text="User Name" />
+                              <TableColumn prefWidth="186.4000244140625" text="Post" />
+                          </columns>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+         <effect>
+            <InnerShadow color="#1a00ff" height="18.62" width="23.38" />
+         </effect>
+      </TabPane>
+      <JFXButton fx:id="SManage" layoutX="205.0" layoutY="242.0" onAction="#sManage" prefHeight="38.0" prefWidth="138.0" ripplerFill="#1f00e8" style="-fx-background-color: #e6e3ff;" text="Subject Manage">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXComboBox fx:id="comScode" editable="true" labelFloat="true" layoutX="296.0" layoutY="170.0" onAction="#comScode" prefHeight="38.0" prefWidth="254.0" promptText="Subject Code">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXComboBox fx:id="comDepartment" editable="true" labelFloat="true" layoutX="31.0" layoutY="169.0" onAction="#comDepartment" prefHeight="38.0" prefWidth="207.0" promptText="Deartment">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXComboBox fx:id="comNIC" editable="true" labelFloat="true" layoutX="300.0" layoutY="106.0" onAction="#comNICA" prefHeight="38.0" prefWidth="246.0" promptText="NIC No:">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXTextField fx:id="txtSerchScode" labelFloat="true" layoutX="729.0" layoutY="302.0" prefHeight="38.0" prefWidth="154.0" promptText="Search Subject Code" />
+      <JFXRadioButton fx:id="radViewAll" layoutX="31.0" layoutY="321.0" onAction="#radViewAllAction" text="View All Tables" textFill="#0f185c" />
+   </children>
+</AnchorPane>

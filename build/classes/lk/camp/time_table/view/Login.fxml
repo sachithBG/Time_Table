@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXMasonryPane?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="root" prefHeight="427.0" prefWidth="868.0" style="-fx-background-color: #20120F;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.camp.time_table.viewController.LoginController">
+    <stylesheets>
+        <URL value="@/lk/camp/time_table/css/login.css" />
+    </stylesheets>
+   <children>
+      <JFXMasonryPane layoutX="4.0" layoutY="-1.0" prefHeight="422.0" prefWidth="859.0" />
+      <AnchorPane layoutX="370.0" layoutY="40.0" prefHeight="366.0" prefWidth="483.0" style="-fx-background-color: #0f0730;">
+         <children>
+            <JFXTextField fx:id="txtRegNu" focusColor="WHITE" labelFloat="true" layoutX="32.0" layoutY="77.0" prefHeight="38.0" prefWidth="230.0" promptText="Register number" style="Text Fill: #dbdbff;" unFocusColor="#dbdbff">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPwd" focusColor="WHITE" labelFloat="true" layoutX="32.0" layoutY="214.0" prefHeight="38.0" prefWidth="230.0" promptText="Password" unFocusColor="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </JFXPasswordField>
+            <Label fx:id="lblLog" layoutX="203.0" layoutY="50.0" prefHeight="30.0" prefWidth="66.0" text="Log In" textAlignment="CENTER" textFill="#f5f5f5">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Hyperlink fx:id="pwdLink" layoutX="314.0" layoutY="233.0" prefHeight="28.0" prefWidth="120.0" text="Forgot Password?" underline="true" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Hyperlink>
+            <JFXButton fx:id="btnLogIn" layoutX="339.0" layoutY="194.0" onAction="#LogInbtnAction" prefHeight="30.0" prefWidth="65.0" style="-fx-background-color: #2302fc;" text="Log In" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <ripplerFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.34732824518480376">
+                     <stops>
+                        <Stop color="#1ef245" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </ripplerFill>
+            </JFXButton>
+            <Label fx:id="lblSign" layoutX="199.0" layoutY="20.0" prefHeight="30.0" prefWidth="74.0" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnSignin" layoutX="336.0" layoutY="217.0" onAction="#SigninbtnAction" prefHeight="31.0" prefWidth="73.0" style="-fx-background-color: #2302fc;" text="Sign Up" textFill="WHITE">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXTextField fx:id="txtUserName" focusColor="WHITE" labelFloat="true" layoutX="32.0" layoutY="142.0" prefHeight="38.0" prefWidth="230.0" promptText="User Name" unFocusColor="#dbdbff">
+               <font>
+                  <Font size="14.0" />
+               </font></JFXTextField>
+            <JFXComboBox fx:id="comYearAndSemester" focusColor="#e7ebff" labelFloat="true" layoutX="293.0" layoutY="142.0" prefHeight="38.0" prefWidth="158.0" promptText=" Year And Semester" unFocusColor="WHITE" />
+            <JFXComboBox fx:id="comDepartment" focusColor="#afbeed" labelFloat="true" layoutX="295.0" layoutY="77.0" prefHeight="38.0" prefWidth="158.0" promptText="Department" unFocusColor="WHITE" />
+            <JFXTextField fx:id="txtUserName1" focusColor="WHITE" labelFloat="true" layoutX="32.0" layoutY="142.0" prefHeight="38.0" prefWidth="230.0" promptText="User Name" unFocusColor="#dbdbff">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtpwd1" focusColor="WHITE" labelFloat="true" layoutX="32.0" layoutY="213.0" prefHeight="38.0" prefWidth="230.0" promptText="Password" unFocusColor="#dbdbff">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+            <JFXTextField fx:id="txtCode" focusColor="WHITE" labelFloat="true" layoutX="32.0" layoutY="77.0" prefHeight="38.0" prefWidth="230.0" promptText="NIC No:" unFocusColor="#dbdbff">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXTextField>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="366.0" fitWidth="358.0" layoutX="14.0" layoutY="41.0" opacity="0.52" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/log2.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="clos" layoutX="808.0" layoutY="-1.0" onMouseClicked="#windowClose" prefHeight="30.0" prefWidth="36.0" style="-fx-background-color: #ec0a0a;" text="  X" textAlignment="CENTER" textFill="#fff6f6" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="76.0" layoutY="89.0" prefHeight="66.0" prefWidth="206.0" text="Welcome to Acadamic &#10;         Time Table" textFill="#ffffff" wrapText="true">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPlease" layoutX="88.0" layoutY="234.0" prefHeight="28.0" prefWidth="182.0" style="-fx-region-background: #ff0505;" text=" If you not Sign up, Please .." textAlignment="CENTER" underline="true" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.2844444380866156" centerY="0.19465641575005216" focusDistance="0.8971962082051785" radius="0.5747663729658751">
+               <stops>
+                  <Stop color="RED" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Label>
+      <JFXButton fx:id="btnSignUp" layoutX="130.0" layoutY="300.0" onAction="#SignUpbtn" prefHeight="22.0" prefWidth="98.0" ripplerFill="#2a4bf5be" style="-fx-background-color: #fa1111;" text="Sign Up" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="14.0" layoutY="7.0" prefHeight="18.0" prefWidth="287.0" text="Faculty of Engineering university of Ruhuna" textFill="WHITE" />
+      <JFXButton fx:id="btnLog" layoutX="130.0" layoutY="254.0" onAction="#Logbtn" prefHeight="44.0" prefWidth="98.0" ripplerFill="#081eff" style="-fx-background-color: #07ff38;" text="Log In" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="40.0" layoutY="165.0" prefHeight="27.0" prefWidth="152.0" text="Pleasse select one," textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXRadioButton fx:id="radStu" alignment="CENTER_LEFT" layoutX="35.0" layoutY="202.0" onAction="#radStudent" text="Student" textFill="WHITE" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="redStu" />
+         </toggleGroup>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="radLec" layoutX="255.0" layoutY="200.0" onAction="#radLecture" text="Admin" textFill="WHITE" toggleGroup="$redStu">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXRadioButton>
+      <JFXRadioButton fx:id="radAdm" layoutX="158.0" layoutY="200.0" onAction="#radAdmin" text="Lecture" textFill="WHITE" toggleGroup="$redStu">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </JFXRadioButton>
+   </children>
+</AnchorPane>
